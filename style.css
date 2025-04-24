@@ -93,6 +93,8 @@ aside{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     background-color:#F4E8CE;
     grid-area:main;
 }
@@ -106,6 +108,18 @@ main p{
     font-family: "Laila" ;
     font-size: 15px;
     text-indent: 25px;
+}
+
+main img{
+    height : 25vh;
+    width: auto;
+    padding-left : 2vh;
+    padding-right : 2vh;
+}
+
+.part{
+    display: flex;
+    padding : 2vh ;
 }
 
 h2{

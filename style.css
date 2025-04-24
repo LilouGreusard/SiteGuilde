@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 18vh 7vh 71vh 4vh;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer"
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #354944;
+    grid-area: header;
+}
+
+header img{
+    height: 85%;
+    width: auto;
+    border-radius: 50%;
+    padding-left: 1% ;
+}
+
+h1{
+    color: #D4AF37 ;
+    text-shadow: black 0px 2px 4px;
+    font-size : 10vh;
+    font-family: "Libre Baskerville" ;
+    font-weight:normal;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#558E7D;
+    grid-area:nav;
+    overflow: hidden;
+}
+
+a{
+    color: #D4AF37 ;
+    text-shadow: black 0px 2px 4px;
+    font-family: "Libre Baskerville" ;
+    text-decoration: none;
+}
+
+nav a{
+    font-size:3vh;
+}
+
+nav a.icon-text{
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vh;
+}
+
+nav a.icon-text::before {
+    content: "";
+    display: flex;
+    background-size:32px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 35px;
+}
+
+.icon-messagerie::before {
+    background-image: url('src/img/messagerie.png');
+}
+
+.icon-compte::before {
+    background-image: url('src/img/user.png');
+}
+
+aside{
+    background-image: url(src/img/banniereee.jpg);
+    grid-area:aside;
+}
+
+main{
+    background-color:#F4E8CE;
+    grid-area:main;
+}
+
+main p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-left : 2vh;
+    padding-right : 2vh;
+    color: #464455 ;
+    font-family: "Laila" ;
+    font-size: 15px;
+    text-indent: 25px;
+}
+
+h2{
+    padding : 2vh;
+    color: #464455 ;
+    font-family: "Laila" ;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #558E7D;
+    grid-area:footer;
+}
+
+footer a{
+    font-size:2vh;
+    padding-right: 2vw ;
+}
+
+footer p{
+    font-size: 2vh;
+    color: #D4AF37 ;
+    text-shadow: black 0px 2px 4px;
+    font-family: "Libre Baskerville" ;
+    padding-left: 1vw ;
+}
+
+.icon-link{
+    display: inline-block;
+    width: 3.5vw;
+    height: 3.5vh;
+}
+
+.icon-link img {
+    padding-right:0;
+    margin-top:0.5vh;
+    content: "";
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 2.5vw;
+    height: 3.5vh;
+}
